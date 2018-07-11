@@ -31,11 +31,11 @@ var movies = [
     }
 ];
 
-var moviesElements = movies.map(function(movies) {
-   return React.createElement('li', {key: movies.id},
-        React.createElement('h2', {}, movies.title),
-        React.createElement('p', {}, movies.desc),
-        React.createElement('img', {src: movies.image, alt: movies.title})
+var moviesElements = movies.map(function(movie) {
+   return React.createElement('li', {key: movie.id},
+        React.createElement('h2', {}, movie.title),
+        React.createElement('p', {}, movie.desc),
+        React.createElement('img', {src: movie.image, alt: movie.title})
     );
 });
 
